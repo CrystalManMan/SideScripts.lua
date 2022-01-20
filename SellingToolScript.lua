@@ -1,7 +1,7 @@
 -- Inspired By GS21.
 
 getgenv().Seller =  "Crystal Central" -- Seller EXACT USERNAME ("Example") case sentive 
-getgenv().AltMessage = "Thanks for using Crystal's Selling Tool." -- Message the alts will say when .chat not .say
+getgenv().AltMessage = "Thanks for using Crystal's Selling Tool." -- Message the alts will say when .say
 -- MAKE SURE THE SELLER IS INSIDE THE SERVER BEFORE EXECUTING
 getgenv().Prefix = ":"
 
@@ -24,6 +24,7 @@ Commands:
     .freeze (freezes alts)
     .unfreeze (unfreezes alts)
     .resetalts (Force resets the alt's)
+    .say (Makes the alts chat your AltMessage.)
 
 Built in:
     Anti Afk
