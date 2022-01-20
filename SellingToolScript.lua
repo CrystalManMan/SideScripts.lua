@@ -1,3 +1,5 @@
+-- Inspired By GS21.
+
 getgenv().Seller =  "Crystal Central" -- Seller EXACT USERNAME ("Example") case sentive 
 getgenv().AltMessage = "Thanks for using Crystal's Selling Tool." -- Message the alts will say when .chat not .say
 -- MAKE SURE THE SELLER IS INSIDE THE SERVER BEFORE EXECUTING
