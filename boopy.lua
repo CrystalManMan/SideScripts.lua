@@ -1,15 +1,3 @@
-for _, gui in pairs(game:GetService("CoreGui").RobloxGui:GetChildren()) do
-   if gui:IsA("ScreenGui") and string.match(gui.Name, "_Secretkey101") then
-       gui:Destroy()
-   end
-end
-
-for _, gui in pairs(game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
-   if gui:IsA("ScreenGui") and string.match(gui.Name, "_Secretkey101") then
-       gui:Destroy()
-   end
-end
-
 local Library = {Toggle = true,FirstTab = nil,TabCount = 0,ColorTable = {}}
 
 local RunService = game:GetService("RunService")
@@ -67,7 +55,7 @@ function Library:CreateWindow(Config, Parent)
 	end
 	]]
 	
-	Screen.Name =  tostring(math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9).."_Secretkey101"),
+	Screen.Name =  HttpService:GenerateGUID(false)
 	Screen.Parent = Parent
 	Topbar.WindowName.Text = Config.WindowName
 
