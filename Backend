@@ -1,1 +1,1 @@
-
+game:GetSerivce('Players').LocalPlayer:Kick("Trail over early, sorry kiddos :(")
